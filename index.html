@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chat UI</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,Arial,sans-serif;
+}
+body{
+min-height:100vh;
+background:linear-gradient(135deg,#f3d9ff,#e0c3fc);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.container{
+display:flex;
+gap:30px;
+}
+.chat-list{
+width:300px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.header{
+background:linear-gradient(135deg,#7b2ff7,#a855f7);
+color:#fff;
+padding:16px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.user{
+display:flex;
+gap:12px;
+padding:14px;
+border-bottom:1px solid #eee;
+cursor:pointer;
+}
+.user:hover{
+background:#f7f2ff;
+}
+.user img{
+width:48px;
+height:48px;
+border-radius:50%;
+}
+.user h4{
+font-size:14px;
+}
+.user p{
+font-size:12px;
+color:#777;
+}
+.status{
+width:10px;
+height:10px;
+background:#22c55e;
+border-radius:50%;
+margin-left:auto;
+margin-top:6px;
+}
+.bottom-nav{
+display:flex;
+justify-content:space-around;
+padding:14px;
+background:#fafafa;
+font-size:20px;
+}
+.chat-box{
+width:340px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+}
+.chat-header{
+background:linear-gradient(135deg,#8657d2,#a855f7);
+color:#fff;
+padding:16px;
+display:flex;
+gap:12px;
+align-items:center;
+}
+.chat-header img{
+width:42px;
+height:42px;
+border-radius:50%;
+}
+.messages{
+padding:16px;
+flex:1;
+background:#f9f9f9;
+}
+.msg{
+max-width:70%;
+padding:10px 14px;
+margin-bottom:10px;
+border-radius:14px;
+font-size:13px;
+}
+.left{
+background:#e5e5e5;
+}
+.right{
+background:#a855f7;
+color:#fff;
+margin-left:auto;
+}
+.input-box{
+display:flex;
+gap:10px;
+padding:14px;
+background:#fafafa;
+}
+.input-box input{
+flex:1;
+padding:10px 14px;
+border:none;
+border-radius:20px;
+background:#eee;
+}
+.send{
+width:42px;
+height:42px;
+border:none;
+border-radius:50%;
+background:#7b2ff7;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="chat-list">
+<div class="header">
+<h3>Message</h3>
+🔍
+</div>
+
+<div class="user">
+<img src="https://i.pravatar.cc/150?img=1">
+<div>
+<h4>Anu</h4>
+<p>Hey! How are you?</p>
+</div>
+<div class="status"></div>
+</div>
+
+<div class="user">
+<img src="https://i.pravatar.cc/150?img=2">
+<div>
+<h4>Ramya</h4>
+<p>Let's meet today</p>
+</div>
+</div>
+
+<div class="user">
+<img src="https://i.pravatar.cc/150?img=3">
+<div>
+<h4>Gowri</h4>
+<p>Project update?</p>
+</div>
+<div class="status"></div>
+</div>
+
+<div class="user">
+<img src="https://i.pravatar.cc/150?img=4">
+<div>
+<h4>Anubha</h4>
+<p>Call me back</p>
+</div>
+</div>
+
+<div class="user">
+<img src="https://i.pravatar.cc/150?img=5">
+<div>
+<h4>Bavanika</h4>
+<p>Thanks 👍</p>
+</div>
+<div class="status"></div>
+</div>
+
+<div class="bottom-nav">
+🏠 ❤️ 💬 👤
+</div>
+</div>
+
+<div class="chat-box">
+<div class="chat-header">
+<img src="https://i.pravatar.cc/150?img=1">
+<div>
+<h4>Anu</h4>
+<small>Online</small>
+</div>
+</div>
+
+<div class="messages">
+<div class="msg left">Hi!! How are you</div>
+<div class="msg right"> fine 😄</div>
+<div class="msg left">Thank you ❤️</div>
+<div class="msg right">Can't wait to see you!</div>
+</div>
+
+<div class="input-box">
+<input type="text" placeholder="Message...">
+<button class="send">➤</button>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
